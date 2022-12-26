@@ -54,6 +54,7 @@ where
     ) -> Result<(), Self::Error>;
 }
 
+#[derive(Clone)]
 struct Endpoint<A>
 where
     A: ServiceAddress,
@@ -99,7 +100,7 @@ where
     }
 }
 
-#[derive(Default)]
+#[derive(Default, Clone)]
 pub struct EndpointList<B>(pub(self) HashMap<B, Endpoint<B::Address>>)
 where
     B: BusId;
@@ -137,7 +138,7 @@ where
     }
 }
 
-#[derive(Getters)]
+#[derive(Getters, Clone)]
 pub struct Controller<B, R, H>
 where
     R: Request,
