@@ -30,7 +30,7 @@ dependencies = [
  "amplify_num",
  "amplify_syn",
  "parse_arg",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_json",
  "serde_yaml",
  "stringly_conversions",
@@ -55,7 +55,7 @@ version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f27d3d00d3d115395a7a8a4dc045feb7aa82b641e485f7e15f4e67ac16f4f56d"
 dependencies = [
- "serde 1.0.151",
+ "serde 1.0.152",
 ]
 
 [[package]]
@@ -145,7 +145,7 @@ version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "006cc91e1a1d99819bc5b8214be3555c1f0611b169f527a1fdc54ed1f2b745b0"
 dependencies = [
- "serde 1.0.151",
+ "serde 1.0.152",
 ]
 
 [[package]]
@@ -334,7 +334,7 @@ dependencies = [
  "lazy_static",
  "nom",
  "rust-ini",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde-hjson",
  "serde_json",
  "toml",
@@ -612,7 +612,7 @@ dependencies = [
  "curve25519-dalek",
  "ed25519",
  "rand 0.7.3",
- "serde 1.0.151",
+ "serde 1.0.152",
  "sha2",
  "zeroize",
 ]
@@ -790,14 +790,14 @@ dependencies = [
 [[package]]
 name = "inet2_addr"
 version = "0.8.3"
-source = "git+https://github.com/diamondhands-rgb/rust-internet2.git?branch=pr-derive-Clone#9a446dd861566955b980030c0180362c2550ceae"
+source = "git+https://github.com/diamondhands-rgb/rust-internet2.git?branch=wip-rgb-lib#1f5156a27d09f85cfdf77b3cb27abd8967fa31a5"
 dependencies = [
  "amplify",
  "ed25519-dalek",
  "lightning_encoding",
  "parse_arg",
  "secp256k1",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_json",
  "serde_yaml",
  "strict_encoding",
@@ -809,7 +809,7 @@ dependencies = [
 [[package]]
 name = "inet2_derive"
 version = "0.8.1"
-source = "git+https://github.com/diamondhands-rgb/rust-internet2.git?branch=pr-derive-Clone#9a446dd861566955b980030c0180362c2550ceae"
+source = "git+https://github.com/diamondhands-rgb/rust-internet2.git?branch=wip-rgb-lib#1f5156a27d09f85cfdf77b3cb27abd8967fa31a5"
 dependencies = [
  "amplify",
  "proc-macro2",
@@ -829,7 +829,7 @@ dependencies = [
 [[package]]
 name = "internet2"
 version = "0.8.4"
-source = "git+https://github.com/diamondhands-rgb/rust-internet2.git?branch=pr-derive-Clone#9a446dd861566955b980030c0180362c2550ceae"
+source = "git+https://github.com/diamondhands-rgb/rust-internet2.git?branch=wip-rgb-lib#1f5156a27d09f85cfdf77b3cb27abd8967fa31a5"
 dependencies = [
  "amplify",
  "bitcoin_hashes",
@@ -839,7 +839,7 @@ dependencies = [
  "inet2_derive",
  "lightning_encoding",
  "secp256k1",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_with",
  "strict_encoding",
  "zmq2",
@@ -1003,7 +1003,7 @@ dependencies = [
  "nix",
  "once_cell",
  "secp256k1",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_with",
  "shellexpand",
  "strict_encoding",
@@ -1422,7 +1422,7 @@ checksum = "295642060261c80709ac034f52fca8e5a9fa2c7d341ded5cdb164b7c33768b2a"
 dependencies = [
  "rand 0.6.5",
  "secp256k1-sys",
- "serde 1.0.151",
+ "serde 1.0.152",
 ]
 
 [[package]]
@@ -1448,9 +1448,9 @@ checksum = "9dad3f759919b92c3068c696c15c3d17238234498bbdcc80f2c469606f948ac8"
 
 [[package]]
 name = "serde"
-version = "1.0.151"
+version = "1.0.152"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97fed41fc1a24994d044e6db6935e69511a1153b52c15eb42493b26fa87feba0"
+checksum = "bb7d1f0d3021d347a83e556fc4683dea2ea09d87bccdf88ff5c12545d89d5efb"
 dependencies = [
  "serde_derive",
 ]
@@ -1470,9 +1470,9 @@ dependencies = [
 
 [[package]]
 name = "serde_derive"
-version = "1.0.151"
+version = "1.0.152"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "255abe9a125a985c05190d687b320c12f9b1f0b99445e608c21ba0782c719ad8"
+checksum = "af487d118eecd09402d70a5d72551860e788df87b464af30e5ea6a38c75c541e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1487,7 +1487,7 @@ checksum = "877c235533714907a8c2464236f5c4b2a17262ef1bd71f38f35ea592c8da6883"
 dependencies = [
  "itoa",
  "ryu",
- "serde 1.0.151",
+ "serde 1.0.152",
 ]
 
 [[package]]
@@ -1496,7 +1496,7 @@ version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b744a7c94f2f3785496af33a0d93857dfc0c521e25c38e993e9c5bb45f09c841"
 dependencies = [
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_derive",
 ]
 
@@ -1516,7 +1516,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "678b5a069e50bf00ecd22d0cd8ddf7c236f68581b03db652061ed5eb13a312ff"
 dependencies = [
  "hex",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_with_macros",
 ]
 
@@ -1540,7 +1540,7 @@ checksum = "578a7433b776b56a35785ed5ce9a7e777ac0598aac5a6dd1b4b18a307c7fc71b"
 dependencies = [
  "indexmap",
  "ryu",
- "serde 1.0.151",
+ "serde 1.0.152",
  "yaml-rust",
 ]
 
@@ -1748,7 +1748,7 @@ version = "0.5.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1333c76748e868a4d9d1017b5ab53171dfd095f70c712fdb4653a406547f598f"
 dependencies = [
- "serde 1.0.151",
+ "serde 1.0.152",
 ]
 
 [[package]]
@@ -1764,7 +1764,7 @@ dependencies = [
  "hex",
  "hmac",
  "rand 0.7.3",
- "serde 1.0.151",
+ "serde 1.0.152",
  "serde_derive",
  "sha2",
  "sha3",
@@ -2031,7 +2031,8 @@ dependencies = [
 [[package]]
 name = "zmq-sys2"
 version = "0.3.0"
-source = "git+https://github.com/diamondhands-rgb/rust-zmq.git?branch=pr-derive-Clone#9bdf1b1a233039dcbc664f29ba82b5af97995e3d"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5f7e9037b2c14b678cf4dc508a7d995014e9d6a710427d8745d653df846347d8"
 dependencies = [
  "libc",
  "system-deps",
@@ -2041,7 +2042,7 @@ dependencies = [
 [[package]]
 name = "zmq2"
 version = "0.5.0"
-source = "git+https://github.com/diamondhands-rgb/rust-zmq.git?branch=pr-derive-Clone#9bdf1b1a233039dcbc664f29ba82b5af97995e3d"
+source = "git+https://github.com/diamondhands-rgb/rust-zmq.git?branch=wip-rgb-lib#34f1c2bc54b9467a68d92b923b16df102696c7d2"
 dependencies = [
  "bitflags",
  "libc",
